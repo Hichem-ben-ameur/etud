@@ -33,9 +33,9 @@ int main (int argc, char* argv[]){
     // struct pEtud liste={numeroEtud,nom,prenom,note};
        /* allocation (en vert sur le diagramme) et affectation à la variable list (en bleu) */
        //pEtud = malloc(sizeof(pEtud)); 
-   add_list(&pEtud,numeroEtud,nom,prenom,note);
+   //add_list(&pEtud,numeroEtud,nom,prenom,note);
 
-     //add_etud(pEtud);
+     add_etud(numeroEtud,nom,prenom,note);
     return 0;
     break;
   case '3':

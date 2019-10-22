@@ -33,19 +33,9 @@ void print_list(Etud *Etud){
  // printf(" Liste des etudiants \n ");
 
 }
-void add_list(Etud** pEtud,int numeroEtud,char* nom,char* prenom,int note)
-{
-  Etud* pEtud2 = (Etud*) malloc(sizeof(Etud)); 
-        pEtud2->prenom[50] = *prenom; 
-        pEtud2->nom[50] = *nom;              /* affectation du champ data (en rouge) */
-         pEtud2->next = (*pEtud); 
-       (*pEtud) = pEtud2;
-       //add_etud(numeroEtud,nom,prenom,note);
-       print_list(*pEtud);
-       
-}
 
-void supp_list(Etud* pEtud, int numeroEtud){
+
+/*void supp_list(Etud* pEtud, int numeroEtud){
 Etud *temp= pEtud,*ptr=pEtud;
 int i=0;
 while (temp!=NULL)
@@ -65,7 +55,7 @@ while (temp!=NULL)
   
 }
 //return 0;
-}
+}*/
 
 
 

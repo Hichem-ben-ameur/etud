@@ -20,16 +20,22 @@ extern Etud* pEtud;
 /**
  *
  */
-void print_list();
-
+void print_list(Etud *Etud);
 
 /**
  *
  */
-int add_etud(int numero,char* nom, char* prenom, int note);
+void add_list(Etud** pEtud,int numeroEtud,char* nom,char* prenom,int note);
+
+/**
+ *
+ */
+int add_etud(int numeroEtud,char* nom,char* prenom,int note);
 
 
 /**
  *
  */
 int lire_choix();
+
+void supp_list(Etud* pEtud, int numeroEtud);
